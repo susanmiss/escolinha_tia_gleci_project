@@ -1,0 +1,65 @@
+{% extends 'main_website/main_layout.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/escola.css' %}">
+{% endblock %}
+
+{% block image_content %}
+<img alt="Criança sorrindo" id="img_header_school" class="img_header_desktop"
+    src="{% static 'main_website/_img/child_umbrela.jpg' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+{% for school in schools %}
+
+<h1 class="h1_main">{{school.title|safe|escape}}</h1>
+
+<img src="{% static 'main_website/_img/escola.png' %}" alt="Nossos Diferenciais" class="school_main">
+
+
+
+<article class="about_school">
+    <p>{{ school.description|safe|escape}}</p>
+
+</article>
+</main>
+
+
+<article class="see_pictures" role="article">
+    <h1 class="h1_main2">Veja mais fotos da Escolinha Tia Gleci</h1>
+
+    <article class="img_escola_container" role="article">
+        <div class="img_escola modal" id="myModal">
+            <img src="{{school.photo1.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+
+            <img src="{{school.photo2.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+            <img src="{{school.photo3.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+            <img src="{{school.photo4.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+            <img src="{{school.photo5.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+            <img src="{{school.photo6.url}}" alt="Foto da Escolinha" class="img_big"
+                style="width:212px;height:212px;" />
+
+        </div>
+
+    </article>
+</article>
+
+
+
+{% endfor %}
+
+</main>
+
+
+{% endblock %}

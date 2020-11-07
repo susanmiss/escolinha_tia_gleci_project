@@ -1,0 +1,40 @@
+{% extends 'main_website/main_layout.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/diferenciais.css' %}">
+{% endblock %}
+
+{% block image_content %}
+<img alt="Criança sorrindo" id="img_header_school" class="img_header_desktop"
+    src="{% static 'main_website/_img/child_diferenciais.png' %}">
+{% endblock %}
+
+{% block content %}
+
+
+{% for diferential in diferentials %}
+
+<h1 class="h1_main">{{ diferential.title|safe|escape }}</h1>
+
+<img src="{% static 'main_website/_img/diferenciais.jpg' %}" alt="Nossos Diferenciais" class="school_main"
+    style="max-width: 90%; margin-left: 5%;margin-right: 5%">
+
+<article class=" about_school">
+    <p class="p_main">{{ diferential.description|safe|escape }}</p>
+
+</article>
+
+
+
+</main>
+
+
+
+{% endfor %}
+
+
+
+{% endblock %}

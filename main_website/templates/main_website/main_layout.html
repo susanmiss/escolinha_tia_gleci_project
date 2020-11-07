@@ -1,0 +1,110 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/reset.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/main_layout.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'main_website/_img/logo_favicon.ico'%}" />
+
+    {% block extrahead %}
+
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <title>Escolinha Tia Gleci</title>
+
+</head>
+
+<body>
+
+    <header role="banner">
+
+        <div class="dropdown">
+            <button onclick="openMenu()" class="dropbtn"><img src="{%  static 'main_website/_img/menu.svg' %}"
+                    alt="botao menu"></button>
+
+            <div class="dropdown-content" id="myDropdown">
+                <ul>
+                    <li><button id="btn_closemenu" onclick="closeMenu()">X</button></li>
+                    <li><a href="{% url 'home' %}"><img src="{% static 'main_website/_img/home.png'%}" alt="home"></a>
+                    <li><a href="{% url 'school' %}"> A Escola</a></li>
+                    <li><a href="{% url 'visitation' %}">Visitacao</a></li>
+                    <li><a href="{% url 'diferentials' %}">Diferenciais</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation" role="navigation">
+            <div class="navbar">
+                <ul class="ul_navbar">
+                    <li><a href="{% url 'home' %}"><img src="{% static 'main_website/_img/home.png'%}" alt="home"></a>
+                    </li>
+                    <li><a href="{% url 'school' %}"> A Escola</a></li>
+                    <li><a href="{% url 'visitation' %}">Visitacao</a></li>
+                    <li><a href="{% url 'diferentials' %}">Diferenciais</a></li>
+                    <li><a href="{% url 'contact_us' %}">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main role="main">
+
+            <div class="pic_logo">
+
+                {% block image_content %} {% endblock %}
+
+                <img alt="logo da escola" class="logo" src="{% static 'main_website/_img/logo.jpg' %}">
+
+            </div>
+
+
+
+            {% block content %} {% endblock %}
+
+
+            {% block footer_content %}
+
+            <footer role="contentinfo">
+
+                <img alt="logo da escola" src="{% static 'main_website/_img/logo.png' %}" class="f_logo" />
+
+
+                {% for footer in footers %}
+                <div class="footer_text">
+                    <p class="f_adress">
+                        <span class="f_esc">Núcleo de Educação Infantil Escolinha Tia Gleci</span><br />
+                        {{footer.phone}}</br>
+                        {{footer.street}}</br>
+                        {{footer.city}}</br>
+                        Todos os direitos reservados <br> Website criado por <a href="http://susanmissaglia.co.uk"
+                            style="color: rgb(175, 41, 41)" target="_blank">Susan
+                            Missaglia</a>
+
+                    </p>
+                </div>
+
+                {% endfor %}
+
+            </footer>
+
+
+            {% endblock %}
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+            <script src="{% static 'main_website/_js/main.js' %}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+{% extends 'main_website/main_layout.html' %}
+{% csrf_token %}
+
+{% load static %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/home.css' %}">
+
+{% endblock %}
+
+{% block image_content %}
+<img alt="Criança sorrindo" class="img_header_desktop" src="{% static 'main_website/_img/header_desktop.png' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+<h1 id="h1_main"> Olá. Você está no site da Escolinha Tia Gleci.</h1>
+
+<p id="p_main">Saiba mais sobre a escola, entre em contato conosco e saiba tudo sobre o melhor lugar para o seu
+    filho em Rio Grande.</p>
+
+<img alt="Quem ensina com amor educa para a vida toda" class="amor" src="{% static 'main_website/_img/amor.svg' %}">
+
+</main>
+
+<article role="article">
+    <img alt="criança alegre" src="{% static 'main_website/_img/child_aside.png' %}" class="child_asside">
+
+
+
+    <div class="matriculas" id="matricula">
+        <img alt="criança alegre" src="{% static 'main_website/_img/child_aside_desktop.png' %}"
+            class="child_asside_desktop">
+
+        <div class="h1_p_matriculas">
+
+            <h1 class="h1_matriculas">Matrículas Abertas!</h1>
+            Corra, pois são poucas vagas!
+            Preencha o formulário abaixo que entraremos em contato com você para agendar sua visita.
+        </div>
+
+
+        <form name="contactform" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p class="legend1">Seu nome </p><br />
+            <input type="text" name="name" class="inp_name"><br />
+            <p class="legend1">Seu Telefone</p> <br />
+            <input type="number" name="phone" class="inp_fone"><br />
+            <p class="legend1">Seu e-mail</p><br />
+            <input type="email" name="email" class="inp_email"><br />
+            <input type="submit" class="btn_enviar" value="ENVIAR">
+        </form>
+    </div>
+</article>
+
+<article class="testemunhos" role="article">
+    <h1 class="h1_pais">O que os pais e ex-alunos tem a dizer sobre a gente?</h1>
+
+
+    <div id="carousel">
+
+        <div class="hideLeft">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Eliane Coronel</p>
+                <p class="p_titulo_depoimentos">Mãe de aluna</p>
+                <p class="p_depoimentos">"Nesta escola deposito toda a minha segurança e confiança. Lugar e
+                    profissionais acolhedores, atenciosos e gentis."
+                <p>
+            </div>
+        </div>
+
+        <div class="prevLeftSecond">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Vanessa Carratu</p>
+                <p class="p_titulo_depoimentos">Mãe de aluno</p>
+                <p class="p_depoimentos">"Esta escola é um centro de amor. Sabe aquela família que a gente escolhe com o
+                    coração? Família Tia Gleci."
+                <p>
+            </div>
+        </div>
+
+        <div class="prev">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Suelem Pereira</p>
+                <p class="p_titulo_depoimentos">Mãe de aluno</p>
+                <p class="p_depoimentos">"O brilho no olhar do meu filho quando fala da Escolinha me transmite o amor e
+                    cuidado que ele recebe lá!"
+                <p>
+            </div>
+        </div>
+
+        <div class="selected">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Antonella Kwecko</p>
+                <p class="p_titulo_depoimentos">Ex-aluna</p>
+                <p class="p_depoimentos">"Entrei na Escolinha com um ano e meio. Sempre fui muito bem tratada, amava
+                    tudo o que tinha lá. Queria que o tempo voltasse..."
+                <p>
+            </div>
+        </div>
+
+        <div class="next">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Júlia Dameda</p>
+                <p class="p_titulo_depoimentos">Ex-aluna</p>
+                <p class="p_depoimentos">"...Devo muito do que sou hoje a essas pessoas e a esse lugar, que será para
+                    sempre minha segunda casa."
+                <p>
+            </div>
+        </div>
+
+        <div class="nextRightSecond">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Juliana Pinho</p>
+                <p class="p_titulo_depoimentos">Ex-aluna</p>
+                <p class="p_depoimentos">"Na Escolinha vivi os melhores momentos da minha infância que ficaram hoje na
+                    lembrança. Uma escola que é e sempre será uma família para mim."
+                <p>
+            </div>
+        </div>
+
+        <div class="hideRight">
+            <div class="depoimentos fade">
+                <p class="p_name_depoimentos">Cristina Pereira</p>
+                <p class="p_titulo_depoimentos">Mãe de Aluno</p>
+                <p class="p_depoimentos">"Meu filho se criou lá desde os quatro meses e se dependesse da gente, nunca
+                    sairia de lá. Só tenho uma coisa a dizer: Muito obrigada!"
+                <p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="div_btn_depoimentos">
+        <a onclick="plusSlides(-1)"><img alt="clique para ver mais" src="{% static 'main_website/_img/btn_left.svg' %}"
+                class="btn_left" /></a>
+        <a onclick="plusSlides(1)"><img alt="clique para ver mais" src="{% static 'main_website/_img/btn_right.svg' %}"
+                class="btn_right" /></a>
+    </div>
+
+</article>
+
+
+
+<div class="instagram">
+    <h1 class="h1_instagram">As últimas no instagram</h1>
+    <div class="pic">
+        <iframe src="https://snapwidget.com/embed/887443" class="snapwidget-widget-2coll"></iframe>
+
+        <iframe src="https://snapwidget.com/embed/887442" class="snapwidget-widget-3coll"></iframe>
+
+        <iframe src="https://snapwidget.com/embed/887444" class="snapwidget-widget-4coll"></iframe>
+    </div>
+
+    <br /><br />
+    <div class="div_siga_instagram">
+        <p class="p_siga_instagram">Siga a Escolinha Tia Gleci no Instagram</p>
+        <a href="https://www.instagram.com/escolinha_tia_gleci/?hl=en" target="_blank"><img alt="instagram"
+                class="img_instagram" src="{% static '/main_website/_img/instagram_icon.png' %}" /></a>
+    </div>
+</div>
+
+
+
+
+{%  endblock %}

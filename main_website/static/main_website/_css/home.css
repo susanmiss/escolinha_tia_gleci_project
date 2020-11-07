@@ -1,0 +1,1913 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Montserrat, sans-serif;
+
+}
+
+h1{
+  font-size: 24px;
+  color: #221f56;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+p{
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  font-family: Montserrat-Light, sans-serif;
+}
+
+/*----------- Main -----------------*/
+
+
+
+#h1_main{
+  margin-top: -0px;
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  max-width: 100%;
+  line-height: 1.33;
+}
+
+#p_main{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  color:#333333;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.33;
+  font-family: Montserrat, sans-serif;
+}
+
+.amor{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.icons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 120px;
+  height: 30px;
+}
+
+/* ---------- Form --------------------*/
+
+.child_asside_desktop{
+  display: none;
+}
+
+.matriculas{
+  background-color: green;
+  overflow-x: hidden;
+  height: 924px;
+  margin-top: -250px;
+}
+
+.legend1{
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+  margin-top: 40px;
+}
+
+input{
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  color:#979797;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+select{
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+  color:#979797;
+  background-color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.btn_enviar{
+  width: 280px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #221f56;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1_matriculas{
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin-top: 170px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.p_matriculas{
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+  width:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1_p_matriculas{
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+  padding-top: 15px;
+  width:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------Testmonials ----------------*/
+
+.h1_pais{
+  width: 280px;
+  height: 138px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testemunhos{
+   margin-top: 40px;
+   padding: 15px;
+}
+
+.depoimentos{
+   width: 280px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   margin-top: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.p_name_depoimentos{
+  font-size: 20px;
+  color: #221f56;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+  font-family: Montserrat, sans-serif;
+}
+
+.p_titulo_depoimentos{
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.p_depoimentos{
+  font-size: 16px;
+  color: #221f56;
+  text-align: left;
+  width: 203px;
+  height: 130px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  font-family: Montserrat, sans-serif;
+}
+
+.div_btn_depoimentos{
+  margin-left: 33%;
+  margin-top: -230px;
+  margin-bottom: 80px;
+
+}
+
+/*--------------Carousel--------------*/
+
+#carousel{
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.hideLeft{
+  left: 0%;
+  opacity: 0;
+  transform: translateY(0px) translateX(-50%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+.hideRight{
+  left: 100%;
+  opacity: 0;
+  transform: translateY(0px) translateX(-50%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+.prev{
+  z-index: 5;
+  left: 30%;
+  transform: translateY(0px) translateX(-100%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+.prevLeftSecond{
+  z-index: 4;
+  left: 15%;
+  transform: translateY(0px) translateX(-95%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+.selected{
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+.next{
+  z-index: 5;
+  left: 70%;
+  transform: translateY(0px) translateX(0%);
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+.nextRightSecond{
+  z-index: 4;
+  left: 85%;
+  transform: translateY(0px) translateX(-5%);
+  opacity: .7;
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0;
+}
+
+
+/*--------------- Instagram ------------*/
+
+.instagram{
+  height: 600px;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+}
+
+.h1_instagram{
+  padding-top: 55px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pic{
+  padding-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snapwidget-widget-2coll{
+  border:none;
+  overflow:hidden;
+  width:330px;
+  height:330px;
+  max-width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snapwidget-widget-3coll{
+  display: none;
+}
+
+.snapwidget-widget-4coll{
+  display:none;
+}
+
+.p_siga_instagram{
+  color: #221f56;
+  font-family: Montserrat, sans-serif;
+}
+
+.img_instagram{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+.line{
+  width: 300px;
+  height: 2px;
+  background-color: lightpink;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media only screen and (min-width: 621px) and (max-width: 767px){
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    font-family: Montserrat, sans-serif;
+
+  }
+
+  h1{
+    font-size: 24px;
+    color: #221f56;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  p{
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+  }
+
+
+  /*----------- Main -----------------*/
+
+  #h1_main{
+    /* margin-top: 5%; */
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    max-width: 100%;
+    line-height: 1.33;
+  }
+
+  #p_main{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color:#333333;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.33;
+  }
+
+  .amor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .icons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+  }
+
+  /* ---------------- Forms -------------*/
+
+  .matriculas{
+    background-color: green;
+    overflow-x: hidden;
+    height: 640px;
+    margin-top: -250px;
+    z-index: -1;
+    position: relative;
+    max-width: 100%;
+  }
+
+  .child_asside{
+    display: inline;
+    width: 43%;
+    margin-bottom: -190px;
+    z-index: 0;
+    position: relative;
+  }
+
+  .child_asside_desktop{
+    display: none;
+  }
+
+  form{
+    width: 70%;
+    display: inline;
+    float: right;
+  }
+
+  .h1_p_matriculas{
+    display: inline;
+    float: right;
+    padding-right: 50px;
+    font-size: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;;
+    padding-top: 15px;
+    width: 300px;
+  }
+
+  .legend1{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+  }
+
+  input{
+    width: 380px;
+    height: 50px;
+    text-align: center;
+    color:#979797;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    margin-right: 50px;
+    max-width: 100%;
+  }
+
+  select{
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color:#979797;
+    background-color: #FFFFFF;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .btn_enviar{
+    width: 280px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #221f56;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .h1_matriculas{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  .p_matriculas{
+    font-size: 16px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;;
+    padding-top: 15px;
+  }
+
+
+  /*--------------Testemonials ----------------*/
+
+  .h1_pais{
+    width: 280px;
+    height: 138px;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testemunhos{
+   margin-top: 40px;
+   padding: 15px;
+  }
+
+  .depoimentos{
+   width: 280px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   margin-top: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .p_name_depoimentos{
+    font-size: 20px;
+    color: #221f56;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .p_titulo_depoimentos{
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .p_depoimentos{
+    font-size: 16px;
+    color: #221f56;
+    text-align: left;
+    width: 203px;
+    height: 130px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+
+  .div_btn_depoimentos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 40%;
+    margin-top: -230px;
+    margin-bottom: 80px;
+  }
+
+  /*------------Carousel -----------------*/
+
+  #carousel{
+    position: relative;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin-top: 150px;
+  }
+
+  .hideLeft{
+    left: 0%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .hideRight{
+    left: 100%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .prev{
+    z-index: 5;
+    left: 30%;
+    transform: translateY(0px) translateX(-120%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .6;
+  }
+
+  .prevLeftSecond{
+    z-index: 4;
+    left: 15%;
+    transform: translateY(0px) translateX(-95%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .selected{
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+
+  .next{
+    z-index: 5;
+    left: 70%;
+    transform: translateY(0px) translateX(20%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .6;
+  }
+
+  .nextRightSecond{
+    z-index: 4;
+    left: 85%;
+    transform: translateY(0px) translateX(-5%);
+    opacity: .7;
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  /*--------------- Instagram ----------------*/
+
+  .instagram{
+    height: 650px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+  }
+
+  .instagram_icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h1_instagram{
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .pic{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ins_picture{
+    width: 134px;
+    height: 135px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    float:left;
+    width: 40%;
+    margin:10px;
+  }
+
+
+  .snapwidget-widget-3coll{
+    border:none;
+    overflow:hidden;
+    width:550px;
+    height:380px;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .snapwidget-widget-2coll{
+    display: none;
+  }
+
+  .snapwidget-widget-4coll{
+    display:none;
+  }
+
+  .p_siga_instagram{
+    color: #221f56;
+  }
+
+  .img_instagram{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .line{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    font-family: Montserrat, sans-serif;
+  
+  }
+
+  h1{
+    font-size: 24px;
+    color: #221f56;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  p{
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+  }
+
+  /*----------- Main -----------------*/
+
+  #h1_main{
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    max-width: 100%;
+    line-height: 1.33;
+  }
+
+  #p_main{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 22px;
+    color:#333333;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.33;
+  }
+
+  .amor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .icons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+  }
+
+
+  /* ---- Forms -------*/
+
+  .matriculas{
+    background-color: green;
+    overflow-x: hidden;
+    height: 640px;
+    margin-top: -250px;
+    z-index: -1;
+    position: relative;
+  }
+
+  .child_asside{
+    display: inline;
+    width: 43%;
+    margin-bottom: -190px;
+    z-index: 0;
+    position: relative;
+  }
+
+  .child_asside_desktop{
+    display: none;
+  }
+
+  form{
+    width: 70%;
+    display: inline;
+    float: right;
+  }
+
+  .h1_p_matriculas{
+      display: inline;
+      float: right;
+      padding-right: 50px;
+      font-size: 24px;
+      text-align: right;
+      color: #FFFFFF;
+      font-family: Montserrat, sans-serif;;
+      padding-top: 15px;
+      width: 400px;
+  }
+
+  .legend1{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+  }
+
+  input{
+    width: 380px;
+    height: 50px;
+    text-align: center;
+    color:#979797;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+
+  select{
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color:#979797;
+    background-color: #FFFFFF;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .btn_enviar{
+    width: 280px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #221f56;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .h1_matriculas{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  .p_matriculas{
+    font-size: 16px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;;
+    padding-top: 15px;
+  }
+
+
+  /*--------------Testemunials ----------------*/
+
+  .h1_pais{
+    width: 500px;
+    height: 138px;
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testemunhos{
+   margin-top: 40px;
+   padding: 15px;
+  }
+
+  .depoimentos{
+   width: 280px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   margin-top: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .p_name_depoimentos{
+    font-size: 20px;
+    color: #221f56;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .p_titulo_depoimentos{
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .p_depoimentos{
+    font-size: 16px;
+    color: #221f56;
+    text-align: left;
+    width: 203px;
+    height: 130px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+
+  .div_btn_depoimentos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 45%;
+    margin-top: -230px;
+    margin-bottom: 80px;
+  }
+
+/*-----------------Carousel----------------*/
+
+  #carousel{
+    position: relative;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin-top: 150px;
+  }
+
+  .hideLeft{
+    left: 0%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .hideRight{
+    left: 100%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .prev{
+    z-index: 5;
+    left: 30%;
+    transform: translateY(0px) translateX(-100%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .6;
+  }
+
+  .prevLeftSecond{
+    z-index: 4;
+    left: 15%;
+    transform: translateY(0px) translateX(-95%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .selected{
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+
+  .next{
+    z-index: 5;
+    left: 70%;
+    transform: translateY(0px) translateX(0%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .6;
+  }
+
+  .nextRightSecond{
+    z-index: 4;
+    left: 85%;
+    transform: translateY(0px) translateX(-5%);
+    opacity: .7;
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  /*---------------Instagram------------*/
+
+  .instagram{
+    height: 700px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+  }
+
+  .h1_instagram{
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .pic{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ins_picture{
+    width: 134px;
+    height: 135px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    float:left;
+    width: 40%;
+    margin:10px;
+  }
+
+  .snapwidget-widget-3coll{
+    border:none;
+    overflow:hidden;
+    width:650px;
+    height:400px;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .snapwidget-widget-2coll{
+    display: none;
+  }
+
+  .snapwidget-widget-4coll{
+    display:none;
+  }
+
+  .p_siga_instagram{
+    color: #221f56;
+  }
+
+  .img_instagram{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .line{
+    display: none;
+  }
+
+ 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    font-family: Montserrat, sans-serif;
+
+  }
+
+  h1{
+    font-size: 24px;
+    color: #221f56;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  p{
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+  }
+
+  /*----------- Main -----------------*/
+
+  #h1_main{
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    max-width: 100%;
+    line-height: 1.33;
+  }
+
+  #p_main{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+    color:#333333;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.33;
+    width: 781px;
+  }
+
+  .amor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 400px;
+  }
+
+  .icons{
+   display: none;
+  }
+
+
+  /* --------------Forms ------------*/
+
+  .matriculas{
+    background-color: green;
+    overflow-x: hidden;
+    height: 640px;
+    width: 1200px;
+    margin-top: -250px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .child_asside{
+    display: none;
+  }
+
+  .child_asside_desktop{
+    display: inline;
+    width: 574px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -200px;
+    max-width: 100%;
+  }
+
+  form{
+    width: 70%;
+    display: inline;
+    float: right;
+  }
+
+  .h1_p_matriculas{
+    display: inline;
+    float: right;
+    padding-right: 50px;
+    font-size: 24px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;;
+    padding-top: 15px;
+    width: 500px;
+  }
+
+  .legend1{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 10px;
+  }
+
+  input{
+    width: 620px;
+    height: 50px;
+    text-align: center;
+    color:#979797;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+
+  select{
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color:#979797;
+    background-color: #FFFFFF;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .btn_enviar{
+    width: 280px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #221f56;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+
+  .h1_matriculas{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  /*--------------Testemonials ----------------*/
+
+  .h1_pais{
+    width: 532px;
+    height: 138px;
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testemunhos{
+     margin-top: 40px;
+     padding: 15px;
+  }
+
+  .depoimentos{
+     width: 408px;
+     height: 296px;
+     border-radius: 5px;
+     box-shadow: -1px 13px 20px 0 #f0f2f4;
+     background-color: #ffffff;
+     margin-top: 30px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+  }
+
+  .p_name_depoimentos{
+    font-size: 20px;
+    color: #221f56;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .p_titulo_depoimentos{
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .p_depoimentos{
+    font-size: 16px;
+    color: #221f56;
+    text-align: left;
+    width: 203px;
+    height: 130px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+
+  .div_btn_depoimentos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 45%;
+    margin-top: -230px;
+    margin-bottom: 80px;
+  }
+/* ------------------ Carousel ------------------*/
+
+  #carousel{
+    position: relative;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    margin-top: 150px;
+  }
+
+  .hideLeft{
+    left: 0%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .hideRight{
+    left: 100%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .prev{
+    z-index: 5;
+    left: 30%;
+    transform: translateY(0px) translateX(-80%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .7;
+  }
+
+  .prevLeftSecond{
+    z-index: 4;
+    left: 15%;
+    transform: translateY(0px) translateX(-95%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .selected{
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+
+  .next{
+    z-index: 5;
+    left: 70%;
+    transform: translateY(0px) translateX(-20%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .7;
+  }
+
+  .nextRightSecond{
+    z-index: 4;
+    left: 85%;
+    transform: translateY(0px) translateX(-5%);
+    opacity: .7;
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  /*---------------Instagram------------*/
+
+  .instagram{
+    height: 780px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+  }
+
+  .h1_instagram{
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .pic{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ins_picture{
+    width: 134px;
+    height: 135px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    float:left;
+    width: 40%;
+    margin:10px;
+  }
+
+  .snapwidget-widget-4coll{
+    border:none;
+    overflow:hidden;
+    width:880px;
+    height:450px;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .snapwidget-widget-2coll{
+    display: none;
+  }
+
+  .snapwidget-widget-3coll{
+    display:none;
+  }
+
+  .p_siga_instagram{
+    color: #221f56;
+  }
+
+  .img_instagram{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .line{
+    display: none;
+
+  }
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    font-family: Montserrat, sans-serif;
+    width: 2000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  h1{
+    font-size: 24px;
+    color: #221f56;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  p{
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+  }
+
+  /*----------- Main -----------------*/
+
+  #h1_main{
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    max-width: 100%;
+    line-height: 1.33;
+  }
+
+  #p_main{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+    color:#333333;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.33;
+    width: 781px;
+  }
+
+  .amor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 400px;
+  }
+
+  .icons{
+   display: none;
+  }
+
+
+  /* ------------------- Forms-----------------------*/
+
+  .matriculas{
+    background-color: green;
+    overflow-x: hidden;
+    height: 640px;
+    width: 1200px;
+    margin-top: -250px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .child_asside{
+    display: none;
+  }
+
+  .child_asside_desktop{
+    display: inline;
+    width: 574px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -200px;
+    max-width: 100%;
+  }
+
+  form{
+    width: 70%;
+    display: inline;
+    float: right;
+  }
+
+  .h1_p_matriculas{
+    display: inline;
+    float: right;
+    padding-right: 50px;
+    font-size: 24px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;;
+    padding-top: 15px;
+    width: 650px;
+  }
+
+  .legend1{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 10px;
+  }
+
+  input{
+    width: 620px;
+    height: 50px;
+    text-align: center;
+    color:#979797;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+
+  select{
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    color:#979797;
+    background-color: #FFFFFF;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .btn_enviar{
+    width: 280px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #221f56;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+
+  .h1_matriculas{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  /*--------------Testemonials ----------------*/
+
+  .h1_pais{
+    width: 532px;
+    height: 138px;
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testemunhos{
+   margin-top: 40px;
+   padding: 15px;
+  }
+
+  .depoimentos{
+   width: 408px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   margin-top: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .depoimentos1{
+   width: 408px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   display: inline;
+   float:left;
+   margin-left: 10%;
+  }
+
+  .depoimentos2{
+   width: 408px;
+   height: 296px;
+   border-radius: 5px;
+   box-shadow: -1px 13px 20px 0 #f0f2f4;
+   background-color: #ffffff;
+   margin-top: -300px;
+   display: inline;
+   float:right;
+   margin-right: 10%;
+  }
+
+  .p_name_depoimentos{
+    font-size: 20px;
+    color: #221f56;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .p_titulo_depoimentos{
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .p_depoimentos{
+    font-size: 16px;
+    color: #221f56;
+    text-align: left;
+    width: 203px;
+    height: 130px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+
+  .div_btn_depoimentos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 45%;
+    margin-top: -230px;
+    margin-bottom: 80px;
+  }
+
+  /*  ---------------------Carousel--------------------------*/
+
+  #carousel{
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin-top: 150px;
+  max-width: 100%;
+  }
+
+
+  .hideLeft{
+    left: 0%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .hideRight{
+    left: 100%;
+    opacity: 0;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 0;
+  }
+
+  .prev{
+    z-index: 5;
+    left: 30%;
+    transform: translateY(0px) translateX(-60%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .7;
+  }
+
+  .prevLeftSecond{
+    z-index: 4;
+    left: 15%;
+    transform: translateY(0px) translateX(-95%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .4;
+  }
+
+  .selected{
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+
+  .next{
+    z-index: 5;
+    left: 70%;
+    transform: translateY(0px) translateX(-40%);
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .7;
+  }
+
+  .nextRightSecond{
+    z-index: 4;
+    left: 85%;
+    transform: translateY(0px) translateX(-5%);
+    opacity: .7;
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: .4;
+  }
+
+  /*---------------Instagram------------*/
+
+  .instagram{
+    height: 780px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+  }
+
+  .h1_instagram{
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .pic{
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ins_picture{
+    width: 134px;
+    height: 135px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    float:left;
+    width: 40%;
+    margin:10px;
+  }
+
+  .snapwidget-widget-4coll{
+    border:none;
+    overflow:hidden;
+    width:980px;
+    height:450px;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .snapwidget-widget-2coll{
+    display: none;
+  }
+
+  .snapwidget-widget-3coll{
+    display:none;
+  }
+
+  .p_siga_instagram{
+    color: #221f56;
+  }
+
+  .img_instagram{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .line{
+    display: none;
+
+  }
+
+}

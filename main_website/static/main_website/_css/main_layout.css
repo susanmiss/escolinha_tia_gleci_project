@@ -1,0 +1,664 @@
+
+*{
+  margin:0;
+  padding:0;
+ }
+ 
+ body{
+  font-family: Montserrat, sans-serif;
+ }
+ 
+ h1{
+  font-size: 24px;
+  color: #221f56;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+ }
+ 
+ p{
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  font-family: Montserrat-Light, sans-serif;
+ }
+
+  #success{
+  text-align: center; 
+  font-size: 30px; 
+  color: black; 
+  margin: 0 auto; 
+  display: block; 
+  margin-top: 30px; 
+  width: 200px; 
+  height: 50px; 
+  color: white; 
+  background-color: green; 
+  border-radius: 10px;
+  margin-bottom: 20%;
+  }
+
+/* *************** NAVIGATION BAR ************** */
+
+  .dropbtn {
+    cursor: pointer;
+    border: none;
+  }
+  
+  .dropdown{
+    margin-top: 65px;
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .show {
+    display:block;
+  }
+  
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+  .navigation{
+    display: none;
+  }
+  
+   .dropdown-content li{
+    padding-bottom: 15px;
+    background-color: #221f56; 
+    width: 180px;
+    padding-left: 10px;
+  }
+  
+  .dropdown-content li:first-child{
+    padding-top: 15px;
+  }
+  
+  .dropdown-content li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #btn_closemenu{
+    background-color: #221f56;
+    border: none;
+    font-size: 20px;
+    color:white;
+    padding-left: 150px;
+  }
+
+  /* *************** HEADER - PICS  ****************/
+
+  .header{
+    height: 235px;
+  }
+  
+  .img_header_desktop{
+    right: 0;
+    float:right;
+    width: 88%;
+    max-width: 100%;
+    z-index: -1;
+    margin-top: -110px; 
+  } 
+  
+  .logo{
+    display: block;
+    max-width: 100%;
+    width: 235px;
+    margin-top: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+
+  #img_header_school{
+    margin-top: -140px;
+  }
+
+
+  /* ******************* FOOTER ****************/
+
+  footer{
+    height: 200px;
+    clear: both;
+  }
+
+  .f_logo{
+    margin-top: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .f_esc{
+    color:#221f56;
+    font-weight: 600;
+  }
+
+  .f_adress{
+    width: 340px;
+    height: 108px;
+    color:#221f56;
+    font-size: 14px;
+    margin-top: 60px;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+@media only screen and (min-width: 621px) and (max-width: 767px){
+
+  /* **************** NAVIBAR ***************** */
+
+  .navigation{
+    display: inline;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .dropdown{
+    display: none;
+  }
+
+  .navbar{
+    height: 60px;
+    background-color: green;
+  }
+
+  .ul_navbar{
+    display: inline;
+    list-style-type: none;
+  }
+
+ li{
+    float:left;
+    color: white;
+    padding-top: 20px;
+    padding-left: 2%;
+  }
+
+  li:last-child{
+    float:right;
+    background-color: #221f56;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 20px 0 0 0px;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+  }
+
+  /* **************** HEADER ***************  */
+
+
+  .img_header_desktop{
+    right: 0;
+    display: inline;
+    float:right;
+    width: 60%;
+    max-width: 100%;
+    margin-top: 0;
+  } 
+
+  .pic_logo{
+    height: 300px;
+  }
+
+  .logo{
+    width: 30%;
+    display: inline;
+    margin-left: 5%;
+    margin-top: 100px;
+  }
+
+  #img_header_school{
+    margin-top: -45px;
+  }
+
+ /* ***************** FOOTER ************** */
+
+ footer{
+  height: 200px;
+}
+
+.f_logo{
+  margin-top: 100px;
+  display: inline;
+  float:left;
+  margin-left: 8%;
+}
+
+.f_esc{
+  margin-top: 30px;
+  color:#221f56;
+  display: inline;
+  float:right;
+  margin-right: 60px;
+  text-align: left;
+  margin-top: 55px;
+}
+
+.f_adress{
+
+  width: 330px;
+  height: 108px;
+  color:#221f56;
+  font-size: 14px;
+  margin-top: 30px;
+  display: inline;
+  float: right;
+  margin-right: 80px;
+  text-align: left;
+  margin-right: 3%;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+/* ***************** NAVBAR  *************** */
+
+  .navigation{
+    display: inline;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dropdown{
+    display: none;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .navbar{
+    height: 60px;
+    background-color: green;
+  }
+
+  .pic_logo{
+    height: 400px;
+    margin-left: 60px;
+  }
+
+
+  .ul_navbar{
+    display: inline;
+    list-style-type: none;
+  }
+
+  li{
+    float:left;
+    color: white;
+    padding-top: 20px;
+    padding-left:15px;
+  }
+
+  li:last-child{
+    float:right;
+    background-color: #221f56;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 20px 0 0 0px;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+
+  }
+
+  /* ************* HEADER ************** */
+
+
+  .img_header_desktop{
+    right: 0;
+    display: inline;
+    float:right;
+    width: 60%;
+    max-width: 100%;
+    margin-top: 0;
+  } 
+
+  .pic_logo{
+    height: 300px;
+  }
+
+  .logo{
+    width: 30%;
+    display: inline;
+    margin-left: 5%;
+    margin-top: 100px;
+  }
+
+  #img_header_school{
+    margin-top: -45px;
+  }
+
+/* ******************* FOOTER **************** */
+
+footer{
+  height: 200px;
+}
+
+.f_logo{
+  margin-top: 80px;
+  display: inline;
+  float:left;
+  margin-left: 20%;
+}
+
+.f_esc{
+  font-weight: 600;
+  margin-top: 30px;
+  color:#221f56;
+  display: inline;
+  float:right;
+  margin-right: 60px;
+  text-align: left;
+  margin-top: 55px;
+}
+
+.f_adress{
+  width: 350px;
+  height: 108px;
+  color:#221f56;
+  font-size: 14px;
+  margin-top: 30px;
+  display: inline;
+  float: right;
+  margin-right: 100px;
+  text-align: left;
+  margin-right: 5%;
+}
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+
+  /* ***************** NAVBAR **************** */
+
+  .navigation{
+    display: inline;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .dropdown{
+    display: none;
+  }
+
+  .navbar{
+    height: 60px;
+    background-color: green;
+    max-width: 100%;
+  }
+
+  .pic_logo{
+    height: 400px;
+    margin-left: 15%;
+  }
+
+
+  /* ************ HEADER ********* */
+
+  .logo{
+    width: 25%;
+    float:left;
+    display: inline;
+    margin-left: 5%;
+    z-index: 0;
+  }
+
+  .img_header{
+    display: none;
+  }
+
+  .img_tablet{
+    display:none;
+  }
+
+  .img_header_desktop{
+    right: 0;
+    display: inline;
+    float: right;
+    width: 66%;
+    max-width: 900px;
+    z-index: -1;
+    margin-top: -50px;
+  }
+
+  #img_header_school{
+    margin-top: -45px;
+  }
+
+  .ul_navbar{
+    display: inline;
+    list-style-type: none;
+  }
+
+  li{
+    float:left;
+    color: white;
+    padding-top: 20px;
+    padding-left:5%;
+    font-weight: 500;
+    height: 60px;
+  }
+
+  li:first-child{
+    padding-left: 100px;
+  }
+
+  li:last-child{
+    float:right;
+    background-color: #221f56;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 20px 0 0 0px;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+  
+  }
+
+  /* *************** FOOTER *************** */
+
+  footer{
+    height: 200px;
+  }
+
+  .f_logo{
+    margin-top: 100px;
+    display: inline;
+    float:left;
+    margin-left: 20%;
+  }
+
+  .footer_text{
+    margin-top: 30px;
+    width: 50%;
+    float: right;
+  }
+
+  .f_esc{
+    font-weight: 600;
+    color:#221f56;
+  }
+
+  .f_adress{
+    width: 370px;
+    height: 108px;
+    color:#221f56;
+    font-size: 14px;
+    display: inline;
+    float: right;
+    margin-right: 20%;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+  /* ******************* NAVBAR ************** */
+
+  .navigation{
+    display: inline;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dropdown{
+    display: none;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .navbar{
+    height: 60px;
+    background-color: green;
+    max-width: 100%;
+  }
+
+  .pic_logo{
+    height: 400px;
+    margin-left: 20%;
+  }
+
+  .logo{
+    width: 20%;
+    float: left;
+    display: inline;
+    margin-left: 10%;
+    z-index: 0;
+  }
+
+  .ul_navbar{
+    display: inline;
+    list-style-type: none;
+  }
+
+  li{
+    float:left;
+    color: white;
+    padding-top: 20px;
+    padding-left:80px;
+    font-weight: 500;
+  }
+
+  li:first-child{
+    padding-left: 120px;
+  }
+
+  li:last-child{
+    float:right;
+    background-color: #221f56;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 20px 0 0 0px;
+  }
+
+  a{
+    color:white;
+    text-decoration: none;
+  }
+
+  /* ************** HEADER ************** */
+
+  .img_header{
+    display: block;
+  }
+
+  .img_tablet{
+    display: block;
+  }
+
+  .img_header_desktop{
+    right: 0;
+    display: inline;
+    float: right;
+    width: 56%;
+    max-width: 100%;
+    z-index: -1;
+  }
+
+  #img_header_school{
+    margin-top: -45px;
+  }
+
+  /* ************ FOOTER ************** */
+
+
+  footer{
+    height: 200px;
+    clear: both;
+  }
+
+  .f_logo{
+    margin-top: 100px;
+    display: inline;
+    float:left;
+    margin-left: 20%;
+  }
+
+  .footer_text{
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+  }
+
+  .f_esc{
+    color:#221f56;
+    font-weight: 600;
+  }
+
+  .f_adress{
+    width: 370px;
+    height: 108px;
+    color:#221f56;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+    text-align: left;
+    margin-top: 100px;
+    margin-right: 20%;
+  } 
+
+
+}

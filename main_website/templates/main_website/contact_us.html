@@ -1,0 +1,107 @@
+{% extends 'main_website/main_layout.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+{% csrf_token %}
+
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/contato.css' %}">
+
+<style>
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        border-radius: 5px;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+        border-radius: 5px;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    @media screen and (max-width: 600px) {
+
+        .column,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+
+{% endblock %}
+
+{% block image_content %}
+
+<img alt="Criança sorrindo" id="img_header_school" class="img_header_desktop"
+    src="{% static 'main_website/_img/pic_contato.png' %}">
+{% endblock %}
+
+{% block content %}
+
+<h1 class="h1_main">Contato</h1>
+<p style="margin-bottom: 100px;">Preencha o formulário abaixo e entre em contato conosco</p>
+
+<div class="container">
+
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar" style="
+                width: 300px;   
+                max-width: 100%;
+                margin-left: auto; 
+                margin-right: auto; 
+                display: block;" />
+    </form>
+
+</div>
+
+
+
+
+
+{% endblock %}

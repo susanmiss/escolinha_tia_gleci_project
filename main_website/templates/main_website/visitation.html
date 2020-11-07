@@ -1,0 +1,37 @@
+{% extends 'main_website/main_layout.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'main_website/_css/visitacao.css' %}">
+{% endblock %}
+
+{% block image_content %}
+<img alt="Criança sorrindo" id="img_header_school" class="img_header_desktop"
+    src="{% static 'main_website/_img/pic_visitacao.png' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+
+{% for visitation in visitations %}
+
+<h1 class="h1_main">{{visitation.title|safe|escape}}</h1>
+<img src="{% static 'main_website/_img/visitacao.png' %}" alt="Visite nossa escola" class="school_main">
+<article class="about_school">
+
+    <p class="p_main">{{visitation.description|safe|escape}}</p>
+
+
+    <p class="h1_main">{{visitation.phone_number|safe|escape}}</p>
+
+    {% endfor %}
+
+</article>
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'main_website/main_layout.html' %}
+
+{% load static %}
+
+
+
+{% block image_content %}
+<img alt="Criança sorrindo" id="img_header_school" class="img_header_desktop"
+    src="{% static 'main_website/_img/pic_contato.png' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<p style="font-size: 40px; text-align: center; margin-top: 20%">Sua mensagem foi enviada. Entraremos logo em contato :)
+</p>
+
+<a href="/"><button id="success">Voltar</button></a>
+
+
+{% endblock %}
