@@ -3,10 +3,12 @@ Escolinha Tia Gleci Nursery is a website about a nursery in south Brazil. This w
 
 ## Check the website live
 
+[Escolinha Tia Gleci Nursery](http://escolinhatiagleci.com.br)
+
 ```
 
 
-[I'm an inline-style link](http://escolinhatiagleci.com.br)
+http://escolinhatiagleci.com.br
 
 
 ```
